@@ -21,9 +21,13 @@ Flat advertising website for Edgar's brother. Advertises ~30 rental flats across
 | Languages | Spanish + English (i18n-ready for Chinese/Korean later) |
 | Brand | White with grey accents |
 
+## Git workflow
+
+Every change must be made on a new branch — never commit directly to `master`. Create a branch before touching any code, open a PR when the work is ready. This applies to all sessions automatically.
+
 ## Where we are
 
-Domain language locked in `CONTEXT.md`. Two ADRs written (`docs/adr/`). Next step: scaffold the Next.js project.
+Scaffold complete and pushed. Next step: plug in real data from Homero (building names, flat specs, photos) into `src/data/index.ts` and replace placeholder images with Cloudinary URLs.
 
 ## Repo
 
