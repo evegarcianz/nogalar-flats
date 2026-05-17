@@ -8,10 +8,21 @@ export default function Hero() {
   const t = useTranslation()
 
   return (
-    <section className="flex h-[44vh] min-h-[520px]">
-      {/* Left panel — white, text */}
-      <div className="flex items-center w-full md:w-1/4 bg-white px-8 md:px-14 flex-shrink-0">
-        <div>
+    <section className="relative h-[90vh] min-h-[560px]  py-8 pl-12 pr-0 md:py-0 pl-12 pr-0 ">
+      {/* Photo with space around it */}
+      <div className="relative w-full h-full overflow-hidden rounded-tl-2xl rounded-bl-[60px]">
+        <Image
+          src="/images/hero.png"
+          alt="Nogalar Flats"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
+
+      {/* Overlay card */}
+      <div className="absolute inset-0 flex items-center p-4 md:p-8">
+        <div className="ml-4 md:ml-8 bg-white rounded-2xl shadow-xl p-8 md:p-10 max-w-sm w-full">
           <h1 className="text-2xl md:text-3xl font-bold text-navy leading-snug mb-4">
             {t.hero.headline}
           </h1>
@@ -26,17 +37,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      {/* Right panel — photo */}
-      <div className="relative hidden md:block flex-1 overflow-hidden">
-        <Image
-          src="/images/hero.png"
-          alt="Nogalar Flats"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-      </div>
     </section>
+
   )
 }

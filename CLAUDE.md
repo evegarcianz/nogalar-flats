@@ -29,6 +29,18 @@ Every change must be made on a new branch — never commit directly to `master`.
 
 Scaffold complete and pushed. Next step: plug in real data from Homero (building names, flat specs, photos) into `src/data/index.ts` and replace placeholder images with Cloudinary URLs.
 
+## Tailwind quick reference
+
+### Padding
+- `p-4` — all sides | `px-8` — left & right | `py-4` — top & bottom
+- `pl-8` left only | `pr-8` right only | `pt-8` top only | `pb-8` bottom only
+- Responsive prefix: `md:px-12` applies from medium screens up
+
+### Rounded corners
+- `rounded-2xl` — all corners | `rounded-tl-2xl` top-left | `rounded-tr-2xl` top-right | `rounded-bl-2xl` bottom-left | `rounded-br-2xl` bottom-right
+- Size scale: `rounded-sm` → `rounded-md` → `rounded-lg` → `rounded-xl` → `rounded-2xl` → `rounded-3xl` → `rounded-full`
+- Arbitrary: `rounded-[40px]`
+
 ## Repo
 
 GitHub: https://github.com/evegarcianz/nogalar-flats
