@@ -1,13 +1,13 @@
 # Nogalar Flats — Project Context
 
-Flat advertising website for Edgar's brother. Advertises ~30 rental flats across 3 buildings in Ramos Arizpe, Coahuila, Mexico.
+Flat advertising website for Edgar's brother. Advertises 43 rental flats across 5 buildings in Ramos Arizpe, Coahuila, Mexico.
 
 ## Agreed decisions
 
 | Decision | Choice |
 |---|---|
 | Goal | Lead generation (contact form + WhatsApp) |
-| Scale | 3 buildings, ~30 flats |
+| Scale | 5 buildings, 43 flats |
 | Content managed by | Edgar, via data file + redeploy (no admin panel) |
 | Stack | Next.js |
 | Hosting | Vercel (free) |
