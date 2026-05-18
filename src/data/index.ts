@@ -7,131 +7,118 @@ export const siteConfig: SiteConfig = {
   email: 'contacto@nogalarflats.com', // TODO: replace with real email
 }
 
-function makePlaceholder(label: string) {
-  return `https://placehold.co/800x600/e2e8f0/1a2b4a?text=${encodeURIComponent(label)}`
-}
-
-function buildFlats(buildingId: string, count: number, specs: {
-  price: number
-  bedrooms: number
-  bathrooms: number
-  sqm: number
-  floor: number
-  parking: boolean
-  description: { es: string; en: string }
-}) {
-  return Array.from({ length: count }, (_, i) => {
-    const num = String(i + 1)
-    return {
-      id: `${buildingId}-${num}`,
-      number: num,
-      description: specs.description,
-      price: specs.price,
-      bedrooms: specs.bedrooms,
-      bathrooms: specs.bathrooms,
-      sqm: specs.sqm,
-      floor: specs.floor,
-      parking: specs.parking,
-      coverImage: makePlaceholder(`Depa ${num}`), // TODO: replace with Cloudinary URL
-      gallery: [
-        makePlaceholder('Sala'),
-        makePlaceholder('Cocina'),
-        makePlaceholder('Recámara'),
-      ],
-    }
-  })
-}
-
 export const buildings: Building[] = [
   {
-    id: 'depas-10',
-    name: 'Depas 10',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: '', // TODO: Google Maps embed URL
-    flats: buildFlats('depas-10', 12, {
-      price: 6500,
-      bedrooms: 1,
-      bathrooms: 1,
-      sqm: 35,
-      floor: 2,
-      parking: true,
-      description: {
-        es: 'Departamento amueblado de 1 recámara con A/C, estacionamiento cubierto, balcón y acceso a áreas comunes con rooftop. Vigilancia con guardia y cámaras.',
-        en: '1-bedroom furnished apartment with A/C, covered parking, balcony, and rooftop common areas. Guard and camera security.',
+    id: 'depas-benavides',
+    name: 'Depas 10 & Depas Nuevos',
+    address: 'Boulevard Jaime Benavides Pompa #320, Col. Haciendas, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!4v1779130850040!6m8!1m7!1sa1nD4UVA5X7jj1ijN8Ywlg!2m2!1d25.53265084833182!2d-100.9456054943173!3f130.61924195894417!4f-26.470081314945006!5f0.7820865974627469',
+    flats: [
+      {
+        id: 'depas-benavides-tipo-a',
+        number: 'Tipo A',
+        description: {
+          es: 'Departamento amueblado de 35 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador de gas y conexiones de lavadora incluidos. Edificio con roof garden y vigilancia 24/7.',
+          en: 'Furnished 35 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, gas water heater, and laundry connections included. Building with rooftop terrace and 24/7 security.',
+        },
+        price: 6500,
+        bedrooms: 1,
+        bathrooms: 1,
+        sqm: 35,
+        floor: 1,
+        parking: true,
+        coverImage: 'https://placehold.co/600x400/e2e8f0/1a2b4a?text=Tipo+A',
+        gallery: [],
       },
-    }),
-  },
-  {
-    id: 'canada-de-la-rosa',
-    name: 'Cañada de la Rosa',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: '', // TODO: Google Maps embed URL
-    flats: buildFlats('canada-de-la-rosa', 4, {
-      price: 8200,
-      bedrooms: 1,
-      bathrooms: 1,
-      sqm: 60,
-      floor: 2,
-      parking: true,
-      description: {
-        es: 'Amplio departamento amueblado de 1 recámara y 60 m², con estacionamiento cubierto, balcón y rooftop. Vigilancia con cámaras.',
-        en: 'Spacious 1-bedroom furnished apartment of 60 m² with covered parking, balcony, and rooftop. Camera security.',
+      {
+        id: 'depas-benavides-tipo-b',
+        number: 'Tipo B',
+        description: {
+          es: 'Departamento amueblado de 30 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador eléctrico y conexiones de lavadora. Edificio con roof garden y vigilancia 24/7.',
+          en: 'Furnished 30 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, electric water heater, and laundry connections. Building with rooftop terrace and 24/7 security.',
+        },
+        price: 7500,
+        bedrooms: 1,
+        bathrooms: 1,
+        sqm: 30,
+        floor: 1,
+        parking: true,
+        coverImage: 'https://placehold.co/600x400/dde1e7/1a2b4a?text=Tipo+B',
+        gallery: [],
       },
-    }),
+    ],
   },
   {
     id: 'diaz-ordaz',
     name: 'Díaz Ordaz',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: '', // TODO: Google Maps embed URL
-    flats: buildFlats('diaz-ordaz', 9, {
-      price: 9600,
-      bedrooms: 2,
-      bathrooms: 1,
-      sqm: 80,
-      floor: 2,
-      parking: true,
-      description: {
-        es: 'Departamento amueblado de 2 recámaras y 80 m² con A/C, 2 estacionamientos cubiertos, balcón, bodega y rooftop. Vigilancia con cámaras.',
-        en: '2-bedroom furnished apartment of 80 m² with A/C, 2 covered parking spaces, balcony, storage room, and rooftop. Camera security.',
+    address: 'Boulevard Díaz Ordaz 1330, Colonia del Valle, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259.9666267879897!2d-100.94311307076222!3d25.53272694949074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688137db46fb7bd%3A0x13e7a99308b00b75!2sLic.%20Gustavo%20D%C3%ADaz%20Ordaz%201330%2C%20Col%20del%20Valle%20I%2C%2025904%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779130332115!5m2!1sen!2suk',
+    flats: [
+      {
+        id: 'diaz-ordaz-ejemplo',
+        number: 'Ejemplo',
+        description: {
+          es: 'Departamento amueblado de 80 m² con dos recámaras, balcón, bodega y dos cajones de estacionamiento cubierto. Clima, calentador de gas y conexiones de lavadora. Edificio con roof garden y cámaras de seguridad.',
+          en: 'Furnished 80 m² two-bedroom apartment with balcony, storage room, and two covered parking spaces. AC, gas water heater, and laundry connections. Building with rooftop terrace and security cameras.',
+        },
+        price: 9600,
+        bedrooms: 2,
+        bathrooms: 1,
+        sqm: 80,
+        floor: 1,
+        parking: true,
+        coverImage: 'https://placehold.co/600x400/cbd5e1/1a2b4a?text=Diaz+Ordaz',
+        gallery: [],
       },
-    }),
+    ],
+  },
+  {
+    id: 'canada-de-la-rosa',
+    name: 'Cañada de la Rosa',
+    address: 'Cañada de la Rosa #103, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.0117649195363!2d-100.94281053031523!3d25.536809308683715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688148216864461%3A0xaa52e8e3b097cafe!2sCanad%C3%A1%20de%20La%20Rosa%20103%2C%20La%20Hacienda%2C%2025903%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779129883517!5m2!1sen!2suk',
+    flats: [
+      {
+        id: 'canada-de-la-rosa-ejemplo',
+        number: 'Ejemplo',
+        description: {
+          es: 'Amplio departamento amueblado de 60 m² con recámara, balcón y estacionamiento cubierto. Calentador de gas y conexiones de lavadora. Edificio con roof garden y cámaras de seguridad.',
+          en: 'Spacious furnished 60 m² apartment with one bedroom, balcony, and covered parking. Gas water heater and laundry connections. Building with rooftop terrace and security cameras.',
+        },
+        price: 8200,
+        bedrooms: 1,
+        bathrooms: 1,
+        sqm: 60,
+        floor: 1,
+        parking: true,
+        coverImage: 'https://placehold.co/600x400/e8edf2/1a2b4a?text=Canada+de+la+Rosa',
+        gallery: [],
+      },
+    ],
   },
   {
     id: 'parque-madrid',
     name: 'Parque Madrid',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: '', // TODO: Google Maps embed URL
-    flats: buildFlats('parque-madrid', 6, {
-      price: 8500,
-      bedrooms: 1,
-      bathrooms: 1,
-      sqm: 35,
-      floor: 2,
-      parking: true,
-      description: {
-        es: 'Departamento amueblado de 1 recámara con A/C, estacionamiento semicubierto, balcón y bodega. Vigilancia con cámaras.',
-        en: '1-bedroom furnished apartment with A/C, semi-covered parking, balcony, and storage room. Camera security.',
+    address: 'Esquina Boulevard Plan de Guadalupe y Parque Madrid #120, Colonia VillaMagna, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.9791314200028!2d-100.93728457662574!3d25.549496806168055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688150d811d3b5b%3A0x1076aca11564473b!2sParque%20Madrid%20120%2C%20Villa%20Magna%2C%2025903%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779130496324!5m2!1sen!2suk',
+    flats: [
+      {
+        id: 'parque-madrid-ejemplo',
+        number: 'Ejemplo',
+        description: {
+          es: 'Departamento amueblado de 35 m² con recámara, balcón, bodega y estacionamiento semi-cubierto. Clima y calentador eléctrico. Edificio con cámaras de seguridad.',
+          en: 'Furnished 35 m² apartment with one bedroom, balcony, storage room, and semi-covered parking. AC and electric water heater. Building with security cameras.',
+        },
+        price: 8500,
+        bedrooms: 1,
+        bathrooms: 1,
+        sqm: 35,
+        floor: 1,
+        parking: true,
+        coverImage: 'https://placehold.co/600x400/d4dae0/1a2b4a?text=Parque+Madrid',
+        gallery: [],
       },
-    }),
-  },
-  {
-    id: 'benavides-pompa',
-    name: 'Benavides Pompa',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: '', // TODO: Google Maps embed URL
-    flats: buildFlats('benavides-pompa', 12, {
-      price: 7500,
-      bedrooms: 1,
-      bathrooms: 1,
-      sqm: 30,
-      floor: 3,
-      parking: true,
-      description: {
-        es: 'Departamento amueblado de 1 recámara con A/C, estacionamiento cubierto, balcón, bodega y rooftop. Vigilancia con guardia y cámaras.',
-        en: '1-bedroom furnished apartment with A/C, covered parking, balcony, storage room, and rooftop. Guard and camera security.',
-      },
-    }),
+    ],
   },
 ]
 
@@ -143,11 +130,11 @@ export const faqItems = {
     },
     {
       q: '¿Se aceptan mascotas?',
-      a: 'Los departamentos no aceptan mascotas.',
+      a: 'Por el momento no se aceptan mascotas en ninguno de nuestros edificios.',
     },
     {
       q: '¿Los departamentos están amueblados?',
-      a: 'Sí, todos los departamentos se entregan amueblados.',
+      a: 'Sí, todos nuestros departamentos se entregan completamente amueblados.',
     },
     {
       q: '¿Cuál es la duración mínima del contrato?',
@@ -159,7 +146,7 @@ export const faqItems = {
     },
     {
       q: '¿Hay estacionamiento disponible?',
-      a: 'Sí, todos los departamentos incluyen cajón de estacionamiento.',
+      a: 'Sí, todos nuestros departamentos incluyen cajón de estacionamiento.',
     },
   ],
   en: [
@@ -169,11 +156,11 @@ export const faqItems = {
     },
     {
       q: 'Are pets allowed?',
-      a: 'Pets are not allowed.',
+      a: 'We do not accept pets in any of our buildings at this time.',
     },
     {
       q: 'Are the apartments furnished?',
-      a: 'Yes, all apartments are delivered fully furnished.',
+      a: 'Yes, all our apartments are fully furnished.',
     },
     {
       q: 'What is the minimum lease term?',
@@ -185,7 +172,7 @@ export const faqItems = {
     },
     {
       q: 'Is parking available?',
-      a: 'Yes, all apartments include a parking space.',
+      a: 'Yes, all our apartments include a parking space.',
     },
   ],
 }
