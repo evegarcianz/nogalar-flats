@@ -22,6 +22,18 @@ export default function BuildingSection({ building }: Props) {
 
         {/* Map + flat grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Flat cards (takes 2 columns on large screens) */}
+          <div className="lg:col-span-2">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+              {t.building.flats}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {building.flats.map((flat) => (
+                <FlatCard key={flat.id} flat={flat} buildingName={building.name} />
+              ))}
+            </div>
+          </div>
+
           {/* Map (takes 1 column on large screens) */}
           <div className="lg:col-span-1">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
@@ -37,18 +49,6 @@ export default function BuildingSection({ building }: Props) {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </div>
-          </div>
-
-          {/* Flat cards (takes 2 columns on large screens) */}
-          <div className="lg:col-span-2">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
-              {t.building.flats}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {building.flats.map((flat) => (
-                <FlatCard key={flat.id} flat={flat} buildingName={building.name} />
-              ))}
             </div>
           </div>
         </div>
