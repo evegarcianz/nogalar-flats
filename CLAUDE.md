@@ -1,13 +1,13 @@
 # Nogalar Flats — Project Context
 
-Flat advertising website for Edgar's brother. Advertises ~30 rental flats across 3 buildings in Ramos Arizpe, Coahuila, Mexico.
+Flat advertising website for Edgar's brother. Advertises 43 rental flats across 5 buildings in Ramos Arizpe, Coahuila, Mexico.
 
 ## Agreed decisions
 
 | Decision | Choice |
 |---|---|
 | Goal | Lead generation (contact form + WhatsApp) |
-| Scale | 3 buildings, ~30 flats |
+| Scale | 5 buildings, 43 flats |
 | Content managed by | Edgar, via data file + redeploy (no admin panel) |
 | Stack | Next.js |
 | Hosting | Vercel (free) |
@@ -25,9 +25,21 @@ Flat advertising website for Edgar's brother. Advertises ~30 rental flats across
 
 Every change must be made on a new branch — never commit directly to `master`. Create a branch before touching any code, open a PR when the work is ready. This applies to all sessions automatically.
 
+## Buildings & flats
+
+| Building | Flats | Beds | m² | Price (MXN) | Notes |
+|---|---|---|---|---|---|
+| Depas 10 | 12 | 1 | 35 | $6,500 | Gas water heater, covered parking |
+| Benavides Pompa | 12 | 1 | 30 | $7,500 | Electric water heater, covered parking |
+| Cañada de la Rosa | 4 | 1 | 60 | $8,200 | No A/C, no storage room |
+| Parque Madrid | 6 | 1 | 35 | $8,500 | Electric water heater, semi-covered parking, no rooftop |
+| Díaz Ordaz | 9 | 2 | 80 | $9,600 | 2 parking spaces |
+
+All buildings: furnished, 1 full bath, laundry connections, balcony, water cistern, no elevator, no pets.
+
 ## Where we are
 
-Scaffold complete and pushed. Next step: plug in real data from Homero (building names, flat specs, photos) into `src/data/index.ts` and replace placeholder images with Cloudinary URLs.
+Real data plugged into `src/data/index.ts` from Excel file. Still TODO: real addresses, Google Maps embed URLs, Cloudinary photo URLs, and per-flat floor numbers.
 
 ## Tailwind quick reference
 
