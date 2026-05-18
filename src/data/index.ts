@@ -9,14 +9,14 @@ export const siteConfig: SiteConfig = {
 
 export const buildings: Building[] = [
   {
-    id: 'depas-10',
-    name: 'Depas 10',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
+    id: 'depas-benavides',
+    name: 'Depas 10 & Depas Nuevos',
+    address: 'Boulevard Jaime Benavides Pompa #320, Col. Haciendas, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!4v1779130850040!6m8!1m7!1sa1nD4UVA5X7jj1ijN8Ywlg!2m2!1d25.53265084833182!2d-100.9456054943173!3f130.61924195894417!4f-26.470081314945006!5f0.7820865974627469',
     flats: [
       {
-        id: 'depas-10-ejemplo',
-        number: 'Ejemplo',
+        id: 'depas-benavides-tipo-a',
+        number: 'Tipo A',
         description: {
           es: 'Departamento amueblado de 35 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador de gas y conexiones de lavadora incluidos. Edificio con roof garden y vigilancia 24/7.',
           en: 'Furnished 35 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, gas water heater, and laundry connections included. Building with rooftop terrace and 24/7 security.',
@@ -27,20 +27,12 @@ export const buildings: Building[] = [
         sqm: 35,
         floor: 1,
         parking: true,
-        coverImage: 'https://placehold.co/600x400/e2e8f0/1a2b4a?text=Depas+10',
+        coverImage: 'https://placehold.co/600x400/e2e8f0/1a2b4a?text=Tipo+A',
         gallery: [],
       },
-    ],
-  },
-  {
-    id: 'benavides-pompa',
-    name: 'Benavides Pompa',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
-    flats: [
       {
-        id: 'benavides-pompa-ejemplo',
-        number: 'Ejemplo',
+        id: 'depas-benavides-tipo-b',
+        number: 'Tipo B',
         description: {
           es: 'Departamento amueblado de 30 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador eléctrico y conexiones de lavadora. Edificio con roof garden y vigilancia 24/7.',
           en: 'Furnished 30 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, electric water heater, and laundry connections. Building with rooftop terrace and 24/7 security.',
@@ -51,7 +43,7 @@ export const buildings: Building[] = [
         sqm: 30,
         floor: 1,
         parking: true,
-        coverImage: 'https://placehold.co/600x400/dde1e7/1a2b4a?text=Benavides+Pompa',
+        coverImage: 'https://placehold.co/600x400/dde1e7/1a2b4a?text=Tipo+B',
         gallery: [],
       },
     ],
@@ -59,8 +51,8 @@ export const buildings: Building[] = [
   {
     id: 'diaz-ordaz',
     name: 'Díaz Ordaz',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
+    address: 'Boulevard Díaz Ordaz 1330, Colonia del Valle, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259.9666267879897!2d-100.94311307076222!3d25.53272694949074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688137db46fb7bd%3A0x13e7a99308b00b75!2sLic.%20Gustavo%20D%C3%ADaz%20Ordaz%201330%2C%20Col%20del%20Valle%20I%2C%2025904%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779130332115!5m2!1sen!2suk',
     flats: [
       {
         id: 'diaz-ordaz-ejemplo',
@@ -83,8 +75,8 @@ export const buildings: Building[] = [
   {
     id: 'canada-de-la-rosa',
     name: 'Cañada de la Rosa',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
+    address: 'Cañada de la Rosa #103, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.0117649195363!2d-100.94281053031523!3d25.536809308683715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688148216864461%3A0xaa52e8e3b097cafe!2sCanad%C3%A1%20de%20La%20Rosa%20103%2C%20La%20Hacienda%2C%2025903%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779129883517!5m2!1sen!2suk',
     flats: [
       {
         id: 'canada-de-la-rosa-ejemplo',
@@ -107,8 +99,8 @@ export const buildings: Building[] = [
   {
     id: 'parque-madrid',
     name: 'Parque Madrid',
-    address: 'Ramos Arizpe, Coahuila', // TODO: real address
-    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
+    address: 'Esquina Boulevard Plan de Guadalupe y Parque Madrid #120, Colonia VillaMagna, Ramos Arizpe, Coahuila',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.9791314200028!2d-100.93728457662574!3d25.549496806168055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688150d811d3b5b%3A0x1076aca11564473b!2sParque%20Madrid%20120%2C%20Villa%20Magna%2C%2025903%20Ramos%20Arizpe%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2suk!4v1779130496324!5m2!1sen!2suk',
     flats: [
       {
         id: 'parque-madrid-ejemplo',
