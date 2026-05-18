@@ -8,7 +8,7 @@ export default function Hero() {
   const t = useTranslation()
 
   return (
-    <section className="relative h-[90vh] min-h-[560px]  py-8 pl-12 pr-0 md:py-0 pl-12 pr-0 ">
+    <section className="relative h-[90vh] min-h-[560px]  py-8 pl-24 pr-0 md:py-0 pl-12 pr-0 ">
       {/* Photo with space around it */}
       <div className="relative w-full h-full overflow-hidden rounded-tl-2xl rounded-bl-[60px]">
         <Image
