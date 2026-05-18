@@ -14,9 +14,9 @@ export const buildings: Building[] = [
     address: 'Ramos Arizpe, Coahuila', // TODO: real address
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
     flats: [
-      ...Array.from({ length: 12 }, (_, i) => ({
-        id: `depas-10-${String(i + 1).padStart(2, '0')}`,
-        number: String(i + 1).padStart(2, '0'),
+      {
+        id: 'depas-10-ejemplo',
+        number: 'Ejemplo',
         description: {
           es: 'Departamento amueblado de 35 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador de gas y conexiones de lavadora incluidos. Edificio con roof garden y vigilancia 24/7.',
           en: 'Furnished 35 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, gas water heater, and laundry connections included. Building with rooftop terrace and 24/7 security.',
@@ -25,11 +25,11 @@ export const buildings: Building[] = [
         bedrooms: 1,
         bathrooms: 1,
         sqm: 35,
-        floor: 1, // TODO: assign per-flat floor numbers
+        floor: 1,
         parking: true,
-        coverImage: `https://placehold.co/600x400/e2e8f0/1a2b4a?text=Depas+10+${String(i + 1).padStart(2, '0')}`,
+        coverImage: 'https://placehold.co/600x400/e2e8f0/1a2b4a?text=Depas+10',
         gallery: [],
-      })),
+      },
     ],
   },
   {
@@ -38,9 +38,9 @@ export const buildings: Building[] = [
     address: 'Ramos Arizpe, Coahuila', // TODO: real address
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
     flats: [
-      ...Array.from({ length: 12 }, (_, i) => ({
-        id: `benavides-pompa-${String(i + 1).padStart(2, '0')}`,
-        number: String(i + 1).padStart(2, '0'),
+      {
+        id: 'benavides-pompa-ejemplo',
+        number: 'Ejemplo',
         description: {
           es: 'Departamento amueblado de 30 m² con recámara, balcón, bodega y estacionamiento cubierto. Clima, calentador eléctrico y conexiones de lavadora. Edificio con roof garden y vigilancia 24/7.',
           en: 'Furnished 30 m² apartment with one bedroom, balcony, storage room, and covered parking. AC, electric water heater, and laundry connections. Building with rooftop terrace and 24/7 security.',
@@ -49,11 +49,11 @@ export const buildings: Building[] = [
         bedrooms: 1,
         bathrooms: 1,
         sqm: 30,
-        floor: 1, // TODO: assign per-flat floor numbers
+        floor: 1,
         parking: true,
-        coverImage: `https://placehold.co/600x400/dde1e7/1a2b4a?text=Benavides+${String(i + 1).padStart(2, '0')}`,
+        coverImage: 'https://placehold.co/600x400/dde1e7/1a2b4a?text=Benavides+Pompa',
         gallery: [],
-      })),
+      },
     ],
   },
   {
@@ -62,9 +62,9 @@ export const buildings: Building[] = [
     address: 'Ramos Arizpe, Coahuila', // TODO: real address
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
     flats: [
-      ...Array.from({ length: 9 }, (_, i) => ({
-        id: `diaz-ordaz-${String(i + 1).padStart(2, '0')}`,
-        number: String(i + 1).padStart(2, '0'),
+      {
+        id: 'diaz-ordaz-ejemplo',
+        number: 'Ejemplo',
         description: {
           es: 'Departamento amueblado de 80 m² con dos recámaras, balcón, bodega y dos cajones de estacionamiento cubierto. Clima, calentador de gas y conexiones de lavadora. Edificio con roof garden y cámaras de seguridad.',
           en: 'Furnished 80 m² two-bedroom apartment with balcony, storage room, and two covered parking spaces. AC, gas water heater, and laundry connections. Building with rooftop terrace and security cameras.',
@@ -73,11 +73,11 @@ export const buildings: Building[] = [
         bedrooms: 2,
         bathrooms: 1,
         sqm: 80,
-        floor: 1, // TODO: assign per-flat floor numbers
+        floor: 1,
         parking: true,
-        coverImage: `https://placehold.co/600x400/cbd5e1/1a2b4a?text=Diaz+Ordaz+${String(i + 1).padStart(2, '0')}`,
+        coverImage: 'https://placehold.co/600x400/cbd5e1/1a2b4a?text=Diaz+Ordaz',
         gallery: [],
-      })),
+      },
     ],
   },
   {
@@ -86,9 +86,9 @@ export const buildings: Building[] = [
     address: 'Ramos Arizpe, Coahuila', // TODO: real address
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
     flats: [
-      ...Array.from({ length: 4 }, (_, i) => ({
-        id: `canada-de-la-rosa-${String(i + 1).padStart(2, '0')}`,
-        number: String(i + 1).padStart(2, '0'),
+      {
+        id: 'canada-de-la-rosa-ejemplo',
+        number: 'Ejemplo',
         description: {
           es: 'Amplio departamento amueblado de 60 m² con recámara, balcón y estacionamiento cubierto. Calentador de gas y conexiones de lavadora. Edificio con roof garden y cámaras de seguridad.',
           en: 'Spacious furnished 60 m² apartment with one bedroom, balcony, and covered parking. Gas water heater and laundry connections. Building with rooftop terrace and security cameras.',
@@ -97,11 +97,11 @@ export const buildings: Building[] = [
         bedrooms: 1,
         bathrooms: 1,
         sqm: 60,
-        floor: 1, // TODO: assign per-flat floor numbers
+        floor: 1,
         parking: true,
-        coverImage: `https://placehold.co/600x400/e8edf2/1a2b4a?text=Canada+${String(i + 1).padStart(2, '0')}`,
+        coverImage: 'https://placehold.co/600x400/e8edf2/1a2b4a?text=Canada+de+la+Rosa',
         gallery: [],
-      })),
+      },
     ],
   },
   {
@@ -110,9 +110,9 @@ export const buildings: Building[] = [
     address: 'Ramos Arizpe, Coahuila', // TODO: real address
     mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-100.9!3d25.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMwJzAwLjAiTiAxMDDCsDU0JzAwLjAiVw!5e0!3m2!1ses!2smx!4v1000000000000!5m2!1ses!2smx', // TODO
     flats: [
-      ...Array.from({ length: 6 }, (_, i) => ({
-        id: `parque-madrid-${String(i + 1).padStart(2, '0')}`,
-        number: String(i + 1).padStart(2, '0'),
+      {
+        id: 'parque-madrid-ejemplo',
+        number: 'Ejemplo',
         description: {
           es: 'Departamento amueblado de 35 m² con recámara, balcón, bodega y estacionamiento semi-cubierto. Clima y calentador eléctrico. Edificio con cámaras de seguridad.',
           en: 'Furnished 35 m² apartment with one bedroom, balcony, storage room, and semi-covered parking. AC and electric water heater. Building with security cameras.',
@@ -121,11 +121,11 @@ export const buildings: Building[] = [
         bedrooms: 1,
         bathrooms: 1,
         sqm: 35,
-        floor: 1, // TODO: assign per-flat floor numbers
+        floor: 1,
         parking: true,
-        coverImage: `https://placehold.co/600x400/d4dae0/1a2b4a?text=Parque+Madrid+${String(i + 1).padStart(2, '0')}`,
+        coverImage: 'https://placehold.co/600x400/d4dae0/1a2b4a?text=Parque+Madrid',
         gallery: [],
-      })),
+      },
     ],
   },
 ]
