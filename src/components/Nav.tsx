@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-screen-2xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="text-navy font-bold text-3xl tracking-tight">
+        <span className="text-navy font-bold text-lg md:text-3xl tracking-tight">
           {siteConfig.businessName}
         </span>
 
