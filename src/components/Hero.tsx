@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Photo with space around it */}
       <div className="relative w-full h-full overflow-hidden rounded-tl-2xl rounded-bl-[60px]">
         <Image
-          src="/images/madrid-sala.jpeg"
+          src="/images/apartment-interior.jpg"
           alt="Nogalar Flats"
           fill
           priority
