@@ -2,7 +2,7 @@ import type { Building, SiteConfig } from '@/types'
 
 export const siteConfig: SiteConfig = {
   whatsappNumber: '+528444442520',
-  businessName: 'Nogalar Flats',
+  businessName: 'Departamentos Garcia Del Bosque',
   city: 'Ramos Arizpe, Coahuila',
   email: 'homero.garcia@rsdelnorte.com',
 }
