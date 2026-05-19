@@ -6,7 +6,7 @@ export const en: Translations = {
   },
   hero: {
     headline: 'Apartments for rent in Ramos Arizpe',
-    subheadline: 'Find your next home at Nogalar Flats. Prime locations, modern finishes.',
+    subheadline: 'Find your next home. Prime locations, modern finishes.',
     cta: 'View apartments',
   },
   flat: {

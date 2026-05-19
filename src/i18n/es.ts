@@ -4,7 +4,7 @@ export const es = {
   },
   hero: {
     headline: 'Departamentos en renta en Ramos Arizpe',
-    subheadline: 'Encuentra tu próximo hogar en Nogalar Flats. Ubicaciones privilegiadas, acabados modernos.',
+    subheadline: 'Encuentra tu próximo hogar. Ubicaciones privilegiadas, acabados modernos.',
     cta: 'Ver departamentos',
   },
   flat: {
