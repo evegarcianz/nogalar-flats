@@ -1,10 +1,10 @@
 import type { Building, SiteConfig } from '@/types'
 
 export const siteConfig: SiteConfig = {
-  whatsappNumber: '+521234567890', // TODO: replace with Homero's number
+  whatsappNumber: '+528444442520',
   businessName: 'Nogalar Flats',
   city: 'Ramos Arizpe, Coahuila',
-  email: 'contacto@nogalarflats.com', // TODO: replace with real email
+  email: 'homero.garcia@rsdelnorte.com',
 }
 
 export const buildings: Building[] = [
